@@ -181,6 +181,7 @@ public class Questions {
         // checks to see if variable sub appears in theBigOne
         // highly recommended to write this one out on a notebook
         int counter = 0;
+
         for (int i = 0; i < theBigOne.length() -1; i++) {
             if (theBigOne.charAt(i) == sub.charAt(0)) {
                 for (int j = 0; j < theBigOne.length() -1; j++) {
@@ -189,7 +190,7 @@ public class Questions {
                     } else { // a character didn't match so break
                         break;
                     }
-                    if (counter == sub.length()) {
+                    if (counter == sub.length() - 1) {
                         return true;
                     }
                 }
